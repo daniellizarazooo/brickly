@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix brick: <https://brickschema.org/schema/Brick#>.
+
+brick:das a brick:Location.
+brick:dasd a brick:Location.
+brick:dasdds a brick:Location.
+brick:dasddsdsa a brick:Location.
+brick:Active_energy___Levis a brick:Point.
+brick:Energy_meter a brick:Point.
+brick:Total_current a brick:Point.
+<https://brickschema.org/schema/Brick#VAV2_4.ZN_T> a brick:Point.
+<https://brickschema.org/schema/Brick#VAV2_4.SUPFLOW> a brick:Point.
+<https://brickschema.org/schema/Brick#VAV2_4.SUPFLSP> a brick:Point.
+<https://brickschema.org/schema/Brick#VAV2_4.DPRPOS> a brick:Point.
+<https://brickschema.org/schema/Brick#VAV2_4.SUPFLOW2> a brick:Point.
+brick:Sensors___Levis a brick:Equipment;
+    brick:hasPoint brick:Active_energy___Levis.
+brick:dasdsada a brick:Location.
+brick:dsadad a brick:Location.
+brick:dsadaddas a brick:Location.
+brick:dsadaddasd2 a brick:Location.
+brick:dsadaddasd2dsa a brick:Location.
+brick:Sensors a brick:Equipment;
+    brick:hasPoint brick:Energy_meter, brick:Total_current.
+brick:AHU1A a brick:Equipment;
+    brick:feeds brick:VAV2_4, brick:VAV2_3.
+brick:VAV2_4 a brick:Equipment;
+    brick:hasPart <https://brickschema.org/schema/Brick#VAV2_4.DPR>;
+    brick:hasPoint <https://brickschema.org/schema/Brick#VAV2_4.ZN_T>, <https://brickschema.org/schema/Brick#VAV2_4.SUPFLOW>, <https://brickschema.org/schema/Brick#VAV2_4.SUPFLOW2>.
+brick:VAV2_3 a brick:Equipment;
+    brick:feeds brick:VAV2_3Zone_2.
+brick:dsadaddasd2dsadas a brick:Location.
+brick:dsadaddasd2dsadas2 a brick:Location.
+brick:VAV2_3Zone_2 a brick:Location;
+    brick:hasPart brick:ROOM_410_2, brick:ROOM_411_2, brick:ROOM_412_2.
+brick:ROOM_410_2 a brick:Location.
+brick:ROOM_411_2 a brick:Location.
+brick:ROOM_412_2 a brick:Location.
+brick:Building_2 a brick:Location;
+    brick:hasLocation brick:Room_5.
+brick:Room_5 a brick:Location;
+    brick:hasLocation brick:HVAC_ZONE1.
+brick:Business a brick:Location;
+    brick:hasLocation brick:Building_1, brick:GF.
+brick:Building_1 a brick:Location;
+    brick:hasLocation brick:Pascucci, brick:Levis, brick:Samsonite, brick:Intimissimi, brick:Body_Shop.
+brick:GF a brick:Location.
+brick:Pascucci a brick:Location;
+    brick:hasPart brick:Sensors.
+brick:Levis a brick:Location;
+    brick:hasPart brick:Sensors___Levis.
+brick:Samsonite a brick:Location.
+brick:Intimissimi a brick:Location.
+brick:Body_Shop a brick:Location.
+brick:Nike a brick:Location.
+brick:VAV2_3Zone a brick:Location.
+brick:Room_410 a brick:Location.
+brick:Room_411 a brick:Location.
+brick:Room_412 a brick:Location.
+<https://brickschema.org/schema/Brick#VAV2_4.DPR> a brick:Equipment;
+    brick:hasPoint <https://brickschema.org/schema/Brick#VAV2_4.DPRPOS>.
+brick:Testing_brick_type a brick:Location.
+brick:HVAC_TEST_2 a brick:Location;
+    brick:hasPart brick:HVAC_01.
+brick:HVAC_01 a brick:Equipment.
+brick:HVAC_ZONE1 a brick:Location;
+    brick:hasPart brick:HVAC_EQUIPMENT.
+brick:HVAC_EQUIPMENT a brick:Equipment.
+brick:testin_2 a brick:Location.
+brick:let_no_your_heart_be_troubled a brick:Location.
+brick:testin2_2 a brick:Location.
